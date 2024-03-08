@@ -11,80 +11,66 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 25% 20% 10% 1fr;
+    grid-template-columns: 25% 30%;
     justify-items: end;
     align-items: center;
 }
 
-
-.navbarCongress img:nth-child(1){
-    width: 300px;
+.logosContainerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.navbarCongress img:nth-child(2){
-    width: 180px;
+.navbarCongress img.logoHeader{
+    width: 100px;
 }
 
-.navbarCongress img:nth-child(3){
-    width: 160px;
+.navbarCongress img.logoCongress{
+    width: 280px;
 }
 
 @media screen and (max-width:1492px) {
 
     .navbarCongress{
-        grid-template-columns: 25% 20% 10% 1fr;
         padding-bottom: 10px;
     }
 
-    .navbarCongress img:nth-child(1){
+    .navbarCongress img.logoHeader{
+        width: 90px;
+    }
+    
+    .navbarCongress img.logoCongress{
         width: 250px;
     }
-    
-    .navbarCongress img:nth-child(2){
-        width: 160px;
-    }
-    
-    .navbarCongress img:nth-child(3){
-        width: 130px;
-    }
+   
 }
 
 @media screen and (max-width:1290px) {
 
     .navbarCongress{
-        grid-template-columns: 20% 16% 7% 1fr;
+
         padding-bottom: 0px;
     }
 
-    .navbarCongress img:nth-child(1){
-        width: 200px;
-    }
-    
-    .navbarCongress img:nth-child(2){
-        justify-self: center;
-        width: 100px;
-    }
-    
-    .navbarCongress img:nth-child(3){
+    .navbarCongress img.logoHeader{
         width: 80px;
     }
+
+    
+   
 }
 
 
 @media screen and (max-width:1024px) {
 
     .navbarCongress{
-        grid-template-columns: 25% 15% 10% 1fr;
-        padding-bottom: 0px;
+        grid-template-columns: 25% 30%;
     }
     
-    .navbarCongress img:nth-child(2){
-        justify-self: end;
-    }
-    
-    .navbarCongress img:nth-child(3){
-        justify-self: center;
-    }
 }
 
 
@@ -93,68 +79,39 @@
 @media screen and (max-width:910px) {
 
     .navbarCongress{
-        grid-template-columns: 20% 20% 10% 1fr;
+        grid-template-columns: 30% 40%;
         padding: 7px;
-        padding-top: 10px;
+        padding-top: 30px;
         background-size: cover;
     }
 
-    .navbarCongress img:nth-child(1){
-        width: 150px;
+    .navbarCongress img.logoHeader{
+        width: 70px;
     }
-    
-    
-    .navbarCongress img:nth-child(2){
-        justify-self: end;
-    }
-    
-    .navbarCongress img:nth-child(3){
-        justify-self: center;
+
+    .navbarCongress img.logoCongress{
+        width: 220px;
     }
 }
 
 
-@media screen and (max-width:778px) {
-
-    .navbarCongress{
-        grid-template-columns: 25% 20% 10% 1fr;
-        padding: 7px;
-        padding-top: 10px;
-    }
-
-    .navbarCongress img:nth-child(1){
-        width: 150px;
-    }
-    
-    
-    .navbarCongress img:nth-child(2){
-        width: 80px;
-    }
-    
-    .navbarCongress img:nth-child(3){
-        width: 60px;
-    }
-}
 
 
 @media screen and (max-width:568px) {
+    .navbarCongress img.logoCongress{
+        width: 120px;
+    }
+    .navbarCongress img.logoHeader{
+        width: 50px;
+    }
+}
 
-    .navbarCongress{
-        grid-template-columns: 30% 20% 20% 1fr;
-        padding: 20px;
-    }
 
-    .navbarCongress img:nth-child(1){
-        width: 130px;
+@media screen and (max-width:320px) {
+    .navbarCongress img.logoCongress{
+        width: 100px;
     }
-    
-    
-    .navbarCongress img:nth-child(2){
-        width: 70px;
-        justify-self: center;
-    }
-    
-    .navbarCongress img:nth-child(3){
-        width: 70px;
+    .navbarCongress img.logoHeader{
+        width: 40px;
     }
 }
